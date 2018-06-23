@@ -9,4 +9,5 @@ Türkiye'nin tüm illeri ve ilçelerinin hiyerarşik yapıdaki array dizisidir.
 4. Tarayıcınızdan http://localhost:8000 adresine girin
 
 # Önizleme
+
 ![ön izleme](https://i.hizliresim.com/BAN5EL.png)
