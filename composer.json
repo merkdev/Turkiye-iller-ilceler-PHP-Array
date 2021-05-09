@@ -19,7 +19,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "MerkDev\\": "src/"
+      "MerkDev\\Cities\\": "src/"
     }
   },
   "require": {
@@ -27,5 +27,8 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "phpunit --testdox ./tests"
   }
 }
