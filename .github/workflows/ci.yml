@@ -1,9 +1,12 @@
 name: Github Actions for PHP with PHPUnit Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  build:
+  test:
 
     runs-on: ubuntu-latest
 
