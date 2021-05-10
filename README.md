@@ -1,8 +1,11 @@
+- [Turkiye-iller-ilceler-PHP-Array](#turkiye-iller-ilceler-php-array)
+  - [Kullanım](#kullanım)
+  - [Açıklama](#açıklama)
+  - [Sorunlar](#sorunlar)
+  - [Önizleme](#önizleme)
+
 # Turkiye-iller-ilceler-PHP-Array
 Türkiye'nin tüm illeri ve ilçelerinin hiyerarşik yapıdaki array dizisidir. PSR-4 standartlarına uygundur.
-
-## Tests
-[![Github Actions for PHP with PHPUnit Tests](https://github.com/merkdev/Turkiye-iller-ilceler-PHP-Array/actions/workflows/ci.yml/badge.svg)](https://github.com/merkdev/Turkiye-iller-ilceler-PHP-Array/actions/workflows/ci.yml)
 
 ## Kullanım
 1. `composer require merkdev/turkiye-iller-ilceler-php-array` ile kütüphaneyi projenize ekleyin.
