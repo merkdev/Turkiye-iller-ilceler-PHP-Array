@@ -2,7 +2,16 @@
 Türkiye'nin tüm illeri ve ilçelerinin hiyerarşik yapıdaki array dizisidir. PSR-4 standartlarına uygundur.
 
 ## Tests
-[![Github Actions for PHP with PHPUnit Tests](https://github.com/merkdev/Turkiye-iller-ilceler-PHP-Array/actions/workflows/ci.yml/badge.svg)](https://github.com/merkdev/Turkiye-iller-ilceler-PHP-Array/actions/workflows/ci.yml)
+[![Github Actions for PHP with PHPUnit Tests](https://github.com/merkdev/Turkiye-iller-ilceler-PHP-Array/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/merkdev/Turkiye-iller-ilceler-PHP-Array/actions/workflows/ci.yml)
+
+Testleri bilgisayarınızda çalıştırmak için,
+
+```php
+composer install
+composer run test
+```
+
+Lütfen [Composer](http://getcomposer.org/)'ın bilgisayarınızda `composer` olarak kurulduğundan emin olun.
 
 ## Eski sürüm
 Eski sürüm için lütfen `legacy` branchine bakın.
@@ -25,6 +34,9 @@ Eski sürüm için lütfen `legacy` branchine bakın.
 
 ## Sorunlar
 [Github Issues](https://github.com/merkdev/Turkiye-iller-ilceler-PHP-Array/issues)
+
+## Destek
+Bu kütüphane PSR-1, PSR-2 ve PSR-4 standartları göz önünde bulundurularak yazılmıştır. Eğer herhangi bir uyumsuzluk görürseniz lütfen PR gönderiniz.
 
 ## Önizleme
 ![Screenshot](https://i.hizliresim.com/BAN5EL.png)
