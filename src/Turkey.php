@@ -351,7 +351,8 @@ class Turkey
     $this->filter = [];
     if (is_array($city_names)) {
       array_map(function ($city) {
-        return $this->filter[] = $this->data[$city];
+        return (in_array($city, $this->data)) ?
+          $this->filter[] = $this->data[$city] : $this->filter['error']['message'] = 'Yazdığınız şehir bulunamadı';
       }, $city_names);
     } elseif ($city_names == '*') {
       array_map(function ($city) {
