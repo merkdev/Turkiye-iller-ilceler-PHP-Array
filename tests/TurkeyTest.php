@@ -11,6 +11,7 @@ final class TurkeyTest extends TestCase
   private $testing_cities_names = ['İstanbul', 'Antalya', 'Ankara'];
   private $testing_cities_count = 3;
   private $all_cities_count = 81;
+  private $error_message = 'Yazdığınız şehir bulunamadı';
 
   public function setUp(): void
   {
@@ -42,5 +43,16 @@ final class TurkeyTest extends TestCase
       return $city['districts'];
     }, $this->turkey->select($this->testing_cities_names)->get());
     $this->assertGreaterThanOrEqual(1, $districts);
+  }
+
+  /**
+   * Try with typo (see: Antalya"a")
+   *
+   * @return void
+   */
+  public function testSelectError_ReturnTrue(): void
+  {
+    $testObject = $this->turkey->select(['Antalyaa'])->get();
+    $this->assertEquals($this->error_message, $testObject[0]['error']['message']);
   }
 }
